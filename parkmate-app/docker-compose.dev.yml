@@ -1,0 +1,94 @@
+# Development docker-compose (with hot reload)
+version: '3.8'
+
+services:
+  postgres:
+    image: postgis/postgis:15-3.3-alpine
+    container_name: parkmate-postgres-dev
+    environment:
+      POSTGRES_DB: parkmate_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+      - ./backend/src/database/schema_no_postgis.sql:/docker-entrypoint-initdb.d/schema.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - parkmate-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: parkmate-redis-dev
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - parkmate-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: parkmate-backend-dev
+    environment:
+      NODE_ENV: development
+      PORT: 5000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: parkmate_db
+      DB_USER: postgres
+      DB_PASSWORD: postgres123
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: dev_jwt_secret_change_in_production
+      JWT_REFRESH_SECRET: dev_refresh_secret_change_in_production
+      CORS_ORIGIN: http://localhost:3000
+    ports:
+      - "5001:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - parkmate-network
+    command: npm run dev
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    container_name: parkmate-frontend-dev
+    environment:
+      # Use localhost because browser connects from outside Docker network
+      VITE_API_BASE_URL: http://localhost:5001/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - parkmate-network
+    command: npm run dev
+
+volumes:
+  postgres_data_dev:
+
+networks:
+  parkmate-network:
+    driver: bridge

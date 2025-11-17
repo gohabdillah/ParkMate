@@ -166,11 +166,11 @@ Comprehensive documentation is available in the [`parkmate-app/`](./parkmate-app
 This project is developed by Team Glitch as part of the SC2006 Software Engineering course at Nanyang Technological University.
 
 ### Team Members
-- Harshil Gupta
-- Goh Jin Long Abdillah
-- Guan Yibin
-- Kumar Preetham
-- Goh Jun Xian Bryant
+- Harshil Gupta (@rishu1903)
+- Goh Jin Long Abdillah (@gohabdillah)
+- Guan Yibin (@Zerius7733)
+- Kumar Preetham (@kumarpreetham09)
+- Goh Jun Xian Bryant (@Brontt)
 
 
 ### Roles & Responsibilities
@@ -187,7 +187,7 @@ This project is developed by Team Glitch as part of the SC2006 Software Engineer
 ### Lab 1: Requirements & Design
 - **Deliverable**: Use case diagrams, UI mockups, system requirements
 - **Location**: [`lab1/`](./lab1)
-- **PDF**: [`SC2006 Lab 1 Team Glitch.pdf`](./lab1/SC2006%20Lab%201%20Team%20Glitch.pdf)
+- **PDF**: [`SC2006 Lab 1 Team Glitch.pdf`](./lab1/Glitch%Lab%1%Deliverables.pdf)
 
 ### Lab 2: System Architecture
 - **Deliverable**: Dialog maps, sequence diagrams, system architecture

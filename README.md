@@ -1,4 +1,4 @@
-# 2006-SCED-102 - Software Engineering Project
+# SC2006 - Software Engineering Project (NTU)
 
 ## Team Glitch - ParkMate Application
 This repository contains the lab deliverables and the main ParkMate parking application project.
@@ -27,26 +27,6 @@ ParkMate addresses the common challenge of finding available parking spaces in S
 ## 📁 Repository Structure
 
 ```
-2006-SCED-102/
-├── lab1/                           # Lab 1 Deliverables
-│   ├── Images/                     # UI mockups and use case diagrams
-│   │   ├── use-case-diagram.png
-│   │   └── ui-mockups/
-│   └── SC2006 Lab 1 Team Glitch.pdf
-│
-├── lab2/                           # Lab 2 Deliverables
-│   ├── dialog map/                 # System dialog and sequence diagrams
-│   │   ├── login-sequence.png
-│   │   ├── search-carpark.png
-│   │   └── booking-flow.png
-│   └── Lab2 Deliverables.pdf
-│
-├── lab3/                           # Lab 3 Deliverables
-│   └── Lab3 Deliverables.pdf
-│
-├── lab4/                           # Lab 4 Deliverables
-│   └── Lab4 Deliverables.pdf
-│
 └── parkmate-app/                   # 🚀 Main Application (Full-stack)
     ├── backend/                    # Node.js + Express + TypeScript
     │   ├── src/
@@ -153,11 +133,6 @@ Comprehensive documentation is available in the [`parkmate-app/`](./parkmate-app
 | [**README.md**](./parkmate-app/README.md) | 📖 Complete project documentation, architecture, and API reference |
 | [**SETUP_GUIDE.md**](./parkmate-app/SETUP_GUIDE.md) | 🛠️ Step-by-step local development setup (10-15 minutes) |
 | [**DOCKER_README.md**](./parkmate-app/DOCKER_README.md) | 🐳 Docker deployment guide and troubleshooting |
-| [**CONTRIBUTING.md**](./parkmate-app/CONTRIBUTING.md) | 👥 Team contribution guidelines and workflow |
-| [**GOOGLE_MAPS_SETUP.md**](./parkmate-app/GOOGLE_MAPS_SETUP.md) | 🗺️ Google Maps API configuration |
-| [**PROJECT_STRUCTURE.md**](./parkmate-app/PROJECT_STRUCTURE.md) | 🏗️ Detailed project architecture |
-| [**TECH_STACK.md**](./parkmate-app/TECH_STACK.md) | 💻 Technology stack details |
-
 ---
 
 ## ✨ Key Features
@@ -234,10 +209,6 @@ This project is developed by Team Glitch as part of the SC2006 Software Engineer
 ## 🚦 Getting Started for Developers
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/softwarelab3/2006-SCED-102.git
-   cd 2006-SCED-102/parkmate-app
-   ```
 
 2. **Read the documentation**
    - Start with [`SETUP_GUIDE.md`](./parkmate-app/SETUP_GUIDE.md) for quick setup

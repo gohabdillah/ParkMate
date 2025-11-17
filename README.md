@@ -166,11 +166,11 @@ Comprehensive documentation is available in the [`parkmate-app/`](./parkmate-app
 This project is developed by Team Glitch as part of the SC2006 Software Engineering course at Nanyang Technological University.
 
 ### Team Members
-- Harshil Gupta (@rishu1903)
-- Goh Jin Long Abdillah (@gohabdillah)
-- Guan Yibin (@Zerius7733)
-- Kumar Preetham (@kumarpreetham09)
-- Goh Jun Xian Bryant (@Brontt)
+- Harshil Gupta ([@rishu1903](https://github.com/rishu1903))
+- Goh Jin Long Abdillah ([@gohabdillah](https://github.com/gohabdillah))
+- Guan Yibin ([@Zerius7733](https://github.com/Zerius7733))
+- Kumar Preetham ([@kumarpreetham09](https://github.com/kumarpreetham09))
+- Goh Jun Xian Bryant ([@Brontt](https://github.com/Brontt))
 
 
 ### Roles & Responsibilities

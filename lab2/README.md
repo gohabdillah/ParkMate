@@ -1,0 +1,21 @@
+# Lab 2 Deliverables
+
+## Deliverables
+
+- Complete Use Case diagram  
+- Use Case descriptions  
+- Class diagram of entity classes  
+- Key boundary classes and control classes  
+- Sequence diagrams of some use cases  
+- Initial Dialog map  
+
+## Files
+
+The `Glitch Lab 2 Deliverables.pdf` contains all the required Lab 2 deliverables.
+
+The following image files are uploaded as well for reference in case the images used in the PDF file are too small:
+
+1. `Use Case Diagram.png`  
+2. `Entity Class Diagram.png`  
+3. `Controller Boundary Diagram.png`  
+4. `Initial Dialog Map.png`  

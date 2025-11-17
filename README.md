@@ -1,6 +1,7 @@
 # SC2006 - Software Engineering Project (NTU)
 
 ## Team Glitch - ParkMate Application
+![ParkMate Application Banner](parkmate-app/assets/PARKMATE.png)
 This repository contains the lab deliverables and the main ParkMate parking application project.
 
 [![License](https://img.shields.io/badge/License-Academic-blue.svg)](LICENSE)
@@ -209,6 +210,9 @@ This project is developed by Team Glitch as part of the SC2006 Software Engineer
 ## 🚦 Getting Started for Developers
 
 1. **Clone the repository**
+   ```bash
+   git clone https://github.com/gohabdillah/ParkMate.git
+   ```
 
 2. **Read the documentation**
    - Start with [`SETUP_GUIDE.md`](./parkmate-app/SETUP_GUIDE.md) for quick setup
